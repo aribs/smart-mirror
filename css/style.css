@@ -1,11 +1,14 @@
 @font-face {
-    font-family: spaceFont;
-    src: url(../fonts/InversionzUnboxed.otf);
+    font-family: 'Roboto', sans-serif;
 }
 body {
 	background-color: black ;
 	color: white ;
-	font-family: spaceFont;
+	font-family: Roboto;
+	text-align: center;
+}
+h2 {
+	text-align: center;
 }
 /*CLOCK STYLE*/
 #clock{
