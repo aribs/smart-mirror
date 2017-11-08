@@ -1,0 +1,14 @@
+@font-face {
+    font-family: spaceFont;
+    src: url(../fonts/InversionzUnboxed.otf);
+}
+body {
+	background-color: black ;
+	color: white ;
+	font-family: spaceFont;
+}
+/*CLOCK STYLE*/
+#clock{
+	text-align: center;
+    font-size: 90px;
+}

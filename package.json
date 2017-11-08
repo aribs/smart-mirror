@@ -1,0 +1,25 @@
+{
+  "name": "smart-mirror",
+  "version": "1.0.0",
+  "description": "Smart Mirror Project With a Raspberry Pi",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aribs/smart-mirror.git"
+  },
+  "keywords": [
+    "raspberry",
+    "smartmirror",
+    "angularjs",
+    "nodejs"
+  ],
+  "author": "Alejo Ribes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aribs/smart-mirror/issues"
+  },
+  "homepage": "https://github.com/aribs/smart-mirror#readme"
+}
