@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/aribs/smart-mirror/issues"
   },
-  "homepage": "https://github.com/aribs/smart-mirror#readme"
+  "homepage": "https://github.com/aribs/smart-mirror#readme",
+  "dependencies": {
+    "angular-sanitize": "^1.6.6"
+  }
 }

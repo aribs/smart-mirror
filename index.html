@@ -4,20 +4,26 @@
         <title>Smart Mirror</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/css/weather-icons.css">
+        <link rel="stylesheet" type="text/css" href="/css/weather-icons-wind.css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="node_modules/angular-sanitize/angular-sanitize.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
 	</head>
 	<body ng-app="smart_mirror">
         <div class="container-fluid" ng-controller="mirror">
             <div class="row">
-                <div class="col-sm-4 col-md-4">
-                    <h1>here weather</h1>
+                <div class="col-sm-4 col-md-4" ng-init="getWeather()">
+                    <h1 id="temperature" ng-bind-html="temperature">
+
+                    </h1>
+                    <p ng-bind-html="weatherIcon"></p>
+                    <p ng-bind-html="InfoWeather"></p>
                 </div>
                 <div class="col-sm-4 col-md-4">
-                    <h1>¿nothing?</h1>
+                    
                 </div>
                 <div class="col-sm-4 col-md-4" ng-init="getDate()">
                     <h2>{{dateSpanish}}</h2>
